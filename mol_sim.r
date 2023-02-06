@@ -1,4 +1,4 @@
-library(Rpi)
+library(Rcpi)
 library(rcdk)
 
 # DrugBank의 aspirin 구조 정보 sdf format으로 불러옴
@@ -20,4 +20,4 @@ ecfp_ibu_c <- extractDrugExtendedComplete(ibu_mol)
 
 # Calculate Drug Fingerprint Similarity - Tanimoto Correlation 계산
 calcDrugFPSim(ecfp_asp, ecfp_ibu, 'compact', 'tanimoto') # (mol1, mol2, fingerprint version - compact OR complete, 계산할 것)
-calcDrugFPSim(ecfp_asp, ecfp_ibu, 'complete', 'tanimoto')
+calcDrugFPSim(ecfp_asp_c, ecfp_ibu_c, 'complete', 'tanimoto')
