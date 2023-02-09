@@ -2,7 +2,7 @@ import pandas as pd
 from scipy import stats
 
 # Load the data into a Pandas DataFrame
-df = pd.read_excel("전립선암 환자군 및 건강군 데이터")
+df = pd.read_excel("/Users/junhyeongkim/Desktop/lab_project/prostate_data.xlsx")
 
 # Split the data into two groups based on the diagnosis (e.g. prostate cancer or not)
 group_a = df[df['Sample'].str.contains("HC")]['OR2W1']
