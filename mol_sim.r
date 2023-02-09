@@ -1,3 +1,4 @@
+# BiocManager를 통해서 다운로드 BiocManager::install.packages('Rcpi')
 library(Rcpi)
 library(rcdk)
 
